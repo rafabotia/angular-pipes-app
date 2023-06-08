@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './basics-page.component.html',
   styleUrls: ['./basics-page.component.css']
 })
-export class BasicsPageComponent implements OnInit {
+export class BasicsPageComponent {
 
-  constructor() { }
+  public nameLower: string = 'fernando';
+  public nameUpper: string = 'FERNANDO';
+  public fullName: string = 'feRNadO HerReRA';
 
-  ngOnInit(): void {
-  }
 
 }
