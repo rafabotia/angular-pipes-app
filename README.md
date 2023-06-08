@@ -25,3 +25,37 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Instalar PrimeNg
+
+A fecha de hoy junio 2023 es compatible con angular v14 y node 16
+Instalar node 16: node-v16.15.1-x64
+Instalar angular 14: npm install -g @angular/cli@14
+
+Para usar primeNg sin pagar es necesario instalar una versión NO LTS, o saldrá una banda roja arriba indicando:
+You are using an LTS version of PrimeNG with an invalid license, you may either switch back to a non-LTS version or purchase a license at PrimeStore.
+
+Como usamos angular 14, instalamos primeng v14:
+npm i primeng@14 --save
+npm install primeicons --save
+
+en package.json se verá así:
+{
+...
+  "primeicons": "^6.0.1",
+  "primeng": "^14.2.3",
+...
+}
+
+En angular.json:
+      "architect": {
+        "build": {
+	    ....
+	    ....
+            "styles": [
+              "src/styles.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-indigo/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+            ],
+
