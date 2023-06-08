@@ -31,6 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 A fecha de hoy junio 2023 es compatible con angular v14 y node 16
 Instalar node 16: node-v16.15.1-x64
 Instalar angular 14: npm install -g @angular/cli@14
+También animaciones de angular: npm install @angular/animations --save
 
 Para usar primeNg sin pagar es necesario instalar una versión NO LTS, o saldrá una banda roja arriba indicando:
 You are using an LTS version of PrimeNG with an invalid license, you may either switch back to a non-LTS version or purchase a license at PrimeStore.
