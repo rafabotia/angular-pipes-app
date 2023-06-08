@@ -6,7 +6,6 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { MenuComponent } from './components/menu/menu.component';
 
 
-
 @NgModule({
   declarations: [
     MenuComponent
