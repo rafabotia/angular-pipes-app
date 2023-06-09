@@ -5,11 +5,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './uncommon-page.component.html',
   styleUrls: ['./uncommon-page.component.css']
 })
-export class UncommonPageComponent implements OnInit {
+export class UncommonPageComponent {
 
-  constructor() { }
+  // i18n Select
+  public name: string = 'Fernando';
+  public gender: 'male'|'female' = 'male';
 
-  ngOnInit(): void {
+  public invitationMap = {
+    'male': 'invitarlo',
+    'female': 'invitarla'
+  }
+
+  changeClient():void {
+    this.name = 'Melisa';
+    this.gender = 'female';
   }
 
 }
