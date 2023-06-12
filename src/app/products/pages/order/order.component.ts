@@ -28,6 +28,11 @@ export class OrderComponent {
       color: Color.red,
     },
     {
+      name: 'Robin',
+      canFly: false,
+      color: Color.red,
+    },
+    {
       name: 'Linterna Verde',
       canFly: true,
       color: Color.green,
